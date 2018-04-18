@@ -1,27 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Josefin+Sans:400i|Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Josefin+Sans:400,400i|Quicksand:400,600,700');
 
 body {
-    color: #fafafa;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .ubuntu {
     font-family: 'Ubuntu', sans-serif;
-    color: #fafafa;
+}
+
+.josefin-sans-i {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
 }
 
 .josefin-sans {
     font-family: 'Josefin Sans', sans-serif;
-    color: #fafafa;
 }
 
 .quicksand {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    color: #fafafa;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
+}
+
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
 }
 
 .uppercase {
@@ -32,14 +46,13 @@ h1, h2, h3, h4 {
 
 /* ---------------               Heading               --------------- */
 
-
+header {
+    margin: 0;
+    color: #fafafa;
+}
 
 .bg-color-name-jobtitle {
     background-color: #000;
-}
-
-header {
-    margin: 0;
 }
 
 .heading {
@@ -53,7 +66,6 @@ header {
 }
 
 .jobtitle {
-    font-family: 'Josefin Sans', sans-serif;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
@@ -62,6 +74,7 @@ header {
 .col-md-4 {
     padding: 0;
 }
+
 .logo {
     background: url("../images/profile-pic.png");
     background-position: center;
@@ -69,8 +82,6 @@ header {
     background-size: cover;
     min-height: 360px;
     transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
 }
 
 .nav {
@@ -82,11 +93,11 @@ header {
 }
 
 .nav-resume {
-   background-color: #85cdca;
+    background-color: #85cdca;
 }
 
 .nav-contact {
-   background-color: #e8a87c;
+    background-color: #e8a87c;
 }
 
 .nav-downloadcv {
@@ -129,17 +140,18 @@ header {
 
 .float:hover {
     display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  transition-timing-function: ease-out;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
 }
 
-.float:hover, .float:focus, .float:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
+.float:hover,
+.float:focus,
+.float:active {
+    transform: translateY(-8px);
 }
 
 #nav li {
@@ -152,9 +164,141 @@ header {
 
 /* ---------------               Section               --------------- */
 
+section {
+    color: #000;
+    background-color: #fff;
+}
 
+@media (min-width: 992px) {
+    .section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+    }
+}
 
+.row-table {
+    display: table;
+}
 
+.section-header {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.t-r-icon {
+    font-size: 26px;
+    color: #ff7700;
+}
+
+.t-r-heading {
+    margin-bottom: 15px;
+}
+
+section hr {
+    width: 3px;
+    height: 400px;
+    background-color: #ff7700;
+    border-radius: 7px;
+}
+
+/* -----     Personal Info     ----- */
+
+.p-i-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.p-i-item .key,
+.p-i-item .value {
+    padding-right: 8px;
+    
+}
+
+.p-i-item .key h4,
+.p-i-item .value p {
+    margin: 0;
+    
+}
+
+.p-i-item .key {
+    display: inline-block;
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 21px;
+    vertical-align: top;
+}
+
+.p-i-item .value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+}
+
+/* -----     .personal info     ----- */
+
+/* -----     Work History     ----- */
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::before {
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-size: 0.8em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #000;
+}
+
+/* -----     .work history     ----- */
+
+/* -----     My Skills     ----- */
+
+.progress {
+    position: relative;
+    height: 25px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    padding: 3px 30px 3px 10px;
+    color: #fafafa;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/* -----     .my skills     ----- */
 
 
 
@@ -162,15 +306,14 @@ header {
 
 /* ---------------               Footer               --------------- */
 
-
-
 footer {
+    color: #fafafa;
     background-color: #000;
     min-height: 120px;
     margin: 0px;
 }
 
-h5 {
+footer h5 {
     font-size: 16px;
     text-align: left;
     padding-top: 10px;
@@ -212,7 +355,10 @@ footer .social-links {
     padding-top: 25px;
 }
 
-footer .glyphicon-envelope, .glyphicon-phone, .fa-linkedin, .fa-facebook {
+footer .glyphicon-envelope,
+.glyphicon-phone,
+.fa-linkedin,
+.fa-facebook {
     color: #fafafa;
     font-size: 14px;
     text-align: center;
