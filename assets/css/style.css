@@ -171,9 +171,9 @@ section {
 
 @media (min-width: 992px) {
     .section-column {
-    padding: 0 30px 30px;
-    float: none;
-    display: table-cell;
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
     }
 }
 
@@ -213,13 +213,13 @@ section hr {
 .p-i-item .key,
 .p-i-item .value {
     padding-right: 8px;
-    
+
 }
 
 .p-i-item .key h4,
 .p-i-item .value p {
     margin: 0;
-    
+
 }
 
 .p-i-item .key {
@@ -268,12 +268,18 @@ section hr {
     width: 12px;
     height: 12px;
     display: block;
-    top: 2.4em;
+    top: 2.5em;
     position: absolute;
     left: -6px;
     border-radius: 12px;
     content: '';
     background: #000;
+}
+
+@media (max-width:768px) {
+    .timeline-item {
+        margin-left: 10px;
+    }
 }
 
 /* -----     .work history     ----- */
@@ -300,7 +306,61 @@ section hr {
 
 /* -----     .my skills     ----- */
 
+/* -----     Contact     ----- */
 
+.contact-heading {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    background: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:active {
+    outline:none !important;
+}
+
+section .btn-secondary {
+    width: 55px;
+    height: 55px;
+    padding: 12px 0;
+    border-radius: 50%;
+    color: #fafafa;
+    text-align: center;
+    line-height: 25px;
+    background-color: #8f8f8f;
+    font-size: 20px;
+}
+
+section .btn-secondary:hover {
+    background-color: #000;
+    color: #ff7700;
+    width: 65px;
+    height: 65px;
+    line-height: 37px;
+    transition: all 0.35s ease-in-out;
+}
+
+@media (min-width:992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
+}
+
+/* -----     .contact     ----- */
 
 /* ---------------               .section               --------------- */
 
