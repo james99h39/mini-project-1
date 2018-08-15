@@ -39,7 +39,7 @@
                 <div class="row">
                     <ul id="nav" class="list-inline clearfix ubuntu">
                         <li class="col-xs-6 col-sm-2 nav nav-home float">
-                            <a href="index.html"><i class="fa fa-home nav-current" aria-hidden="true"></i><span class="nav-current">Home</span></a>
+                            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-2 nav nav-resume float">
                             <a href="resume.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
@@ -51,7 +51,7 @@
                             <a href="interests.html"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-2 nav nav-github float">
-                            <a href="github.html"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+                            <a href="github.html"><i class="fa fa-github nav-current" aria-hidden="true"></i><span class="nav-current">Github</span></a>
                         </li>
                         <li class="col-xs-6 col-sm-2 nav nav-downloadcv float">
                             <a href="assets/cv/james-horne-cv.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a>
@@ -71,73 +71,19 @@
 
 
     <section class="container-fluid">
-        <div class="row row-table">
-            <div class="col-xs-12 col-sm-12 col-md-4 section-column">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-header ubuntu">
-                            Personal Info
-                        </h3>
-                    </div>
-                </div>
-                <div id="map"></div>
+        <div class="row">
+            <div>
+                <h3 class="contact-heading text-center ubuntu">
+                    View my GitHub projects:
+                </h3>
+                <h5 class="text-center josefin-sans-i">
+                    (or change the username to search for other user profiles)
+                </h5>
             </div>
-            <hr class="hidden-xs hidden-sm hidden-md">
-            <div class="col-xs-12 col-sm-12 col-md-8 section-column">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-header ubuntu">
-                            About Me
-                        </h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <i class="t-r-icon fa fa-question" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-xs-10 col-md-10">
-                                <h4 class="t-r-heading">
-                                    What do I do?
-                                </h4>
-                                <p class="quicksand">
-                                    I am a full stack developer looking to excel my expertise and experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <i class="t-r-icon fa fa-thumbs-up" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-xs-10 col-md-10">
-                                <h4 class="t-r-heading">
-                                    How do I do it?
-                                </h4>
-                                <p class="quicksand">
-                                    I follow form as well as function, and understand that x, y and z make for good user experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2">
-                                <i class="t-r-icon fa fa-bolt" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-xs-10 col-md-10">
-                                <h4 class="t-r-heading">
-                                    Why hire me?
-                                </h4>
-                                <p class="quicksand">
-                                    I work efficiently to build and create, working across the stack. I'm a good communicator, think outside the box and thrive in a team.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="center-form">
+                <input class="quicksand" type="text" id="gh-username" placeholder="Type here" oninput="fetchGitHubInformation()">
+                <div id="gh-user-data" class="clearfix"></div>
+                <div id="gh-repo-data" class="clearfix"></div>
             </div>
         </div>
     </section>

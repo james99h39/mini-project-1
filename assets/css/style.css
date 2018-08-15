@@ -97,7 +97,15 @@ header {
 }
 
 .nav-contact {
-    background-color: #e8a87c;
+    background-color: #eade5f;
+}
+
+.nav-interests {
+    background-color: #8ee87c;
+}
+
+.nav-github {
+    background-color: #ccad77;
 }
 
 .nav-downloadcv {
@@ -119,7 +127,7 @@ header {
     text-decoration: none;
     color: #fafafa;
     height: 120px;
-    font-size: 20px
+    font-size: 19px
 }
 
 .nav a i {
@@ -362,6 +370,18 @@ section .btn-secondary:hover {
 
 /* -----     .contact     ----- */
 
+/* -----     Interests     ----- */
+
+
+
+div#map {
+    min-height: 360px;
+}
+
+
+
+/* -----     .interests     ----- */
+
 /* ---------------               .section               --------------- */
 
 /* ---------------               Footer               --------------- */
@@ -460,3 +480,28 @@ footer i:hover {
 
 
 /* ---------------               .footer               --------------- */
+
+/* ---------------               404               --------------- */
+
+
+
+.here404 h1 {
+    margin: 30px;
+}
+
+.here404 h3 {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.here404 button {
+    margin: 30px;
+}
+
+.here404 p {
+    margin: 30px;
+}
+
+
+
+/* ---------------               .404               --------------- */
