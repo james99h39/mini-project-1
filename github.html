@@ -9,8 +9,14 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/github-styles.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/github-information.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -81,7 +87,7 @@
                 </h5>
             </div>
             <div class="center-form">
-                <input class="quicksand" type="text" id="gh-username" placeholder="Type here" oninput="fetchGitHubInformation()">
+                <input class="quicksand" type="text" id="gh-username" placeholder="Type username here" oninput="fetchGitHubInformation()">
                 <div id="gh-user-data" class="clearfix"></div>
                 <div id="gh-repo-data" class="clearfix"></div>
             </div>
