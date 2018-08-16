@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, intial-scale=1">
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_IBatO5YVhsFkxNZxZGMQh");
+        })();
+    </script>
+    
 </head>
 
 
@@ -81,7 +89,7 @@
                 </h5>
             </div>
             <div class="center-form">
-                <form>
+                <form onsubmit="return sendMail(this);" method="POST">
                     <input type="text" name="name" class="form-control quicksand" id="fullname" placeholder="Name" required/>
                     <input type="text" name="emailaddress" class="form-control quicksand" id="emailaddress" placeholder="Email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
@@ -139,6 +147,10 @@
 
 
     <!-- .footer -->
+
+
+
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
 
 
 
